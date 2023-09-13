@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="EnterPW_Second">
+
+    <ImageView
+        android:id="@+id/LogoResetPassword"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logoresetpassword"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_pw_reset" />
+
+    <EditText
+        android:id="@+id/NhapLaiMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="Nhập lại mật khẩu"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/nh_p_l_i_m_t_kh_u"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/HienThiMatKhau"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/hi_n_th_m_t_kh_u"
+        android:textColor="#008aff"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/NutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#008aff"
+        android:text="@string/ng_nh_p"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

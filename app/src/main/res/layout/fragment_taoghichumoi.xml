@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taoghichumoi">
+
+    <RelativeLayout
+        android:id="@+id/ThanhCongCu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Huy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/h_y"
+            android:textColor="#008aff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ThemGhiChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/Xong"
+            android:layout_toEndOf="@id/Huy"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="@string/th_m_ghi_ch"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Xong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/xong"
+            android:textColor="#008aff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ThanhCongCu2">
+
+        <EditText
+            android:id="@+id/TieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:autofillHints="Nhập tiêu đề"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/ti_u"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="18dp"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/NoiDungGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:autofillHints="Nhập nội dung ghi chú"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/n_i_dung_ghi_ch"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="18dp"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
